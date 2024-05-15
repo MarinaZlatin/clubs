@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+#index {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #09ff00 0%, #051392 100%);
+    font-family: Montserrat, serif;
+    color: rgb(240, 7, 221);
+
+}
+
+#search {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #09ff00 0%, #051392 100%);
+    font-family: Montserrat, serif;
+    color: rgb(240, 7, 221);
+
+    // Заголовок
+    header {
+        flex: 0 0 auto;
+    }
+
+    .search-page {
+        flex: 1 1 auto;
+    }
+
+    // подвал
+    footer {
+        flex: 0 0 auto;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .section {
+        img {
+            width: 13.5rem;
+            height: 13rem;
+        }
+    }
+
+}
+
+#info {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, hsl(158, 94%, 48%) 0%, #08e7ef 100%);
+    font-family: Montserrat, serif;
+    color: rgb(240, 7, 221);
+
+    // Заголовок
+    header {
+        flex: 0 0 auto;
+    }
+
+    .details-section {
+        flex: 1 1 auto;
+        .section {
+            img {
+                width: 30rem;
+                height: 30rem;
+            }
+        }
+    }
+    // подвал
+    footer {
+        flex: 0 0 auto;
+    }
+}
+
+// Меню
+.navbar {
+    background: linear-gradient(90deg, #0bdbea 0%, #42f40c 100%);
+    font-size: 1.3rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 127, 238);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(21, 10, 234);
+}
+
+// Меню, сжатое в три полоски
+.navbar-toggler {
+    background-color: rgb(30, 244, 116);
+}
+
+// Картинка Logo
+.navbar-brand img {
+    width: 4rem;
+}
+
+.line-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+// Главная страница
+.main {
+    flex: 1 1 auto;
+}
+
+// подвал
+footer {
+    flex: 0 0 auto;
+
+    .container-fluid {
+        background: linear-gradient(270deg, #342f5a 0%, #1a189b 100%);
+    }
+
+    .footer-text {
+        color: rgb(18, 246, 60);
+        margin: auto auto;
+    }
+}
+
+// Картинки-ссылки в подвале
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 2.5rem;
+        margin-inline: 1rem;
+    }
+}
+
+.nav-bar {
+    a {
+        color: rgb(18, 246, 60);
+    }
+}
+
+header .navbar,
+footer .container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+// Ширина картинок
+#images {
+    a {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// Изменения в зависимости от размера экрана
+@media (max-width: 3000px) {
+
+    // Оступы между строк
+    .main {
+        .container {
+            margin-top: 0.8rem;
+
+            .two-row {
+                margin-top: 0.8rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    // Высота картинок
+    #images {
+        a {
+            img {
+                height: 30rem;
+            }
+        }
+    }
+}
+
+// 60 cm
+@media (max-width: 2560px) {
+
+    // Оступы между строк
+    .main {
+        .container {
+            margin-top: 1rem;
+
+            .two-row {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 29rem;
+            }
+        }
+    }
+}
+
+// 47 cm
+@media (max-width: 1920px) {
+    .main {
+        .container {
+            margin-top: 0.4rem;
+
+            .two-row {
+                margin-top: 0.4rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 19.3rem;
+            }
+        }
+    }
+}
+
+// 34.5 cm
+@media (max-width: 1399px) {
+    .main {
+        .container {
+            margin-top: 0.3rem;
+
+            .two-row {
+                margin-top: 0.3rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 19.8rem;
+            }
+        }
+    }
+}
+
+// 29 cm
+@media (max-width: 1199px) {
+    .main {
+        .container {
+            margin-top: 0.3rem;
+
+            .two-row {
+                margin-top: 0.3rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 20rem;
+            }
+        }
+    }
+}
+
+// 24 см
+@media (max-width: 991px) {
+    .main {
+        .container {
+            margin-top: 1.2rem;
+
+            .two-row {
+                margin-top: 1.2rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    // Высота картинок
+    #images {
+        a {
+            img {
+                height: 15rem;
+            }
+        }
+    }
+}
+
+// 19 cm
+@media (max-width: 767px) {
+    .main {
+        .container {
+            margin-top: 0.2rem;
+
+            .two-row {
+                margin-top: 0.1rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    // Высота картинок
+    #images {
+        a {
+            img {
+                height: 25rem;
+            }
+        }
+    }
+}
+
+// 16 cm
+@media (max-width: 643px) {
+    .main {
+        .container {
+            margin-top: 0.2rem;
+
+            .two-row {
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 25rem;
+            }
+        }
+    }
+}
+
+// 14.5 cm
+@media (max-width: 575px) {
+    .main {
+        .container {
+            margin-top: 0.2rem;
+
+            .two-row {
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.35rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 25rem;
+            }
+        }
+    }
+}
+
+// 12.5 cm
+@media (max-width: 543px) {
+    .main {
+        .container {
+            margin-top: 0.2rem;
+
+            .two-row {
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 25rem;
+            }
+        }
+    }
+}
+
+// 12.5 cm
+@media (max-width: 424px) {
+    .main {
+        .container {
+            margin-top: 0.2rem;
+
+            .two-row {
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 23rem;
+            }
+        }
+    }
+}
+
+// 11.5 cm
+@media (max-width: 374px) {
+    .main {
+        .container {
+            margin-top: 0.2rem;
+
+            .two-row {
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 21rem;
+            }
+        }
+    }
+}
+
+// 10.5 cm
+@media (max-width: 319px) {
+    .main {
+        .container {
+            margin-top: 0.2rem;
+
+            .two-row {
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    #images {
+        a {
+            img {
+                height: 15rem;
+            }
+        }
+    }
+}

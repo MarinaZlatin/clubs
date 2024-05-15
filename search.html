@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/css/style.css">
+    <title>Поиск кружков и секций в Израиле</title>
+</head>
+
+<body id="search">
+    <!-- Заголовок -->
+    <header>
+        <div class="col-xs-12">
+            <nav class="navbar navbar-expand-md navbar-light bg-light line-header">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="source/img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                            <a class="nav-link" href="search.html">Кружки и секции</a>
+                            <a class="nav-link" href="details.html">Подробности</a>
+                            <a class="nav-link" href="registration.html">Регистрация</a>
+                            <a class="nav-link" href="login.html">Авторизация</a>
+                            <a class="nav-link" href="profile.html">Личный кабинет</a>
+                            <a class="nav-link" href="form.html">Добавить кружок</a>
+                            <a class="nav-link" href="about.html">О проекте</a>
+                            <a class="nav-link" href="reviews.html">Отзывы</a>
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Поиск</button>
+                    </form>    
+                </div>
+            </nav>
+        </div>
+    </header>    <!-- Страница поиска кружков и секций -->
+    <div class="search-page">
+        <div class="container">
+            <form class="search-form">
+                <div class="row"> <!-- first-row  -->
+                    <div class="col-lg-3">
+                        <p><strong>Центры досуга</strong></p>
+                        <select name="centers">
+                            <option value="s1">Все</option>
+                            <option value="s2">Общественные центры (матнасы)</option>
+                            <option value="s3">Специализированные школы</option>
+                            <option value="s4">Частные уроки</option>
+                            <option value="s5">Центры развития</option>
+                        </select>
+                    </div> <!-- col-lg-3  -->
+                    <div class="col-lg-3">
+                        <p><strong>Категории</strong></p>
+                        <select name="category">
+                            <option value="s1">Все</option>
+                            <option value="s2">Боевые искусства</option>
+                            <option value="s3">Игры с мячом</option>
+                            <option value="s4">Гимнастика</option>
+                            <option value="s5">Музыка</option>
+                            <option value="s6">Оздоровительные упражнения</option>
+                        </select>
+                    </div> <!-- col-lg-3  -->
+                    <div class="col-lg-3">
+                        <p><strong>Подкатегории</strong></p>
+                        <select name="subcategory">
+                            <option value="s1">Все</option>
+                            <option value="s2">Каратэ</option>
+                            <option value="s3">Дзюдо</option>
+                            <option value="s4">Бокс</option>
+                            <option value="s5">ММА</option>
+                            <option value="s6">Самооборона и крав-мага</option>
+                            <option value="s7">функциональный тренинг</option>
+                            <option value="s8">Художественная гимнастика</option>
+                        </select>
+                    </div> <!-- col-lg-3  -->
+                    <div class="col-lg-3">
+                            <br><p></p>
+                            <input class="free-search" type="search" placeholder="Свободный поиск" aria-label="Search">
+                    </div> <!-- col-lg-3  -->
+
+                </div> <!-- first-row  -->
+                <div class="row"> <!-- second-row  -->
+                    <div class="col-lg-2">
+                        <p><strong>Округа</strong></p>
+                        <select name="centers">
+                            <option value="s1">Все</option>
+                            <option value="s2">Центральный</option>
+                            <option value="s3">Северный</option>
+                            <option value="s4">Иерусалимский</option>
+                            <option value="s5">Южный</option>
+                        </select>
+                    </div> <!-- col-lg-2  -->
+                    <div class="col-lg-2">
+                        <p><strong>Города</strong></p>
+                        <select name="category">
+                            <option value="s1">Все</option>
+                            <option value="s2">Тель-Авив</option>
+                            <option value="s3">Ашкелон</option>
+                            <option value="s4">Эйлат</option>
+                            <option value="s5">Атлит</option>
+                            <option value="s6">Рамат-ган</option>
+                            <option value="s6">Иерусалим</option>
+                        </select>
+                    </div> <!-- col-lg-2  -->
+                    <div class="col-lg-2">
+                        <p><strong>Районы</strong></p>
+                        <select name="subcategory">
+                            <option value="s1">Все</option>
+                            <option value="s2">Неве-Декалим</option>
+                            <option value="s3">Кохав-Ацахон</option>
+                            <option value="s4">Мигдаль</option>
+                        </select>
+                    </div> <!-- col-lg-2  -->
+                    <div class="col-lg-2">
+                        <p><strong>Возраст</strong></p>
+                        <select name="subcategory">
+                            <option value="s1">Все</option>
+                            <option value="s2">Малыши</option>
+                            <option value="s3">Дети</option>
+                            <option value="s4">Подростки</option>
+                            <option value="s5">Старшеклассники</option>
+                            <option value="s6">Взрослые</option>
+                            <option value="s7">Пенсионеры</option>
+                        </select>
+                    </div> <!-- col-lg-2  -->
+                    <div class="col-lg-2">
+                        <p><strong>Дни недели</strong></p>
+                        <select name="subcategory">
+                            <option value="s1">Все</option>
+                            <option value="s2">Воскресенье</option>
+                            <option value="s3">Понедельник</option>
+                            <option value="s4">Вторник</option>
+                            <option value="s5">Среда</option>
+                            <option value="s6">Четверг</option>
+                            <option value="s7">Пятница</option>
+                            <option value="s8">Суббота</option>
+                        </select>
+                    </div> <!-- col-lg-2  -->
+                    <div class="col-lg-1">
+                        <p></p>
+                        <br>
+                        <input type="submit" value="Поиск">
+                    </div> <!-- col-lg-1  -->
+                    <div class="col-lg-1">
+                        <p></p>
+                        <br>
+                        <input type="submit" value="Сохранить">
+                    </div> <!-- col-lg-1  -->
+                </div> <!-- second-row  -->
+            </form> <!-- search-form  -->
+        </div>
+
+        <div class="container"> <!-- Результаты поиска -->
+            <div class="search-results">
+                <div class="number-found">
+                    <p>Результат поиска: 36</p>
+                </div> <!-- number-found  -->
+                <div class="results">
+                    <div class="row">   <!-- Первая строка  -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/22.jpg" alt="">
+                                <h6><center>Музыка/Гитара<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/23.jpg" alt="">
+                                <h6><center>Музыка/Фортепиано/органит<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/24.jpg" alt="">
+                                <h6><center>Музыка/Хор<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/25.jpg" alt="">
+                                <h6><center>Танцы/Современные танцы<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/26.jpg" alt="">
+                                <h6><center>Танцы/Балет<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/27.jpg" alt="">
+                                <h6><center>Танцы/Хип хоп<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                    </div> <!--  Первая строка -->
+                    <div class="row">   <!-- Вторая строка  -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/14.png" alt="">
+                                <h6><center>Творчество/Рисование Художественная школа<br>Ришон-ле-Цион, Герцель, 30</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/50.jpg" alt="">
+                                <h6><center>Исполнительское искусство/Музыкальный театр песни Музыкальная школа<br>Ришон-ле-Цион, Жаботинского, 16</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/20.jpg" alt="">
+                                <h6><center>Музыка/Теория и развитие слуха Музыкальная школа<br>Нетания, Гиборей исраель 24</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/18.jpg" alt="">
+                                <h6><center>Музыка/Струнные инструменты Музыкальная школа<br>Нетания, Гиборей исраель 24</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/11.jpg" alt="">
+                                <h6><center>Изучение языков/Иврит<br>Холон</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/4.jpg" alt="">
+                                <h6><center>Творчество/Живопись<br>Тель-Авив</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+
+                    </div> <!--  Вторая строка -->
+                    <div class="row">   <!-- Третья строка  -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/28.jpg" alt="">
+                                <h6><center>Исполнительское искусство/Театр<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/29.jpg" alt="">
+                                <h6><center>Танцы/Брейк-данс<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/30.jpg" alt="">
+                                <h6><center>Танцы/Джаз<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/33.jpg" alt="">
+                                <h6><center>Боевые искусства/Каратэ<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/31.jpg" alt="">
+                                <h6><center>Боевые искусства/Дзюдо<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/32.jpg" alt="">
+                                <h6><center>Боевые искусства/Джиу джитсу<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+
+                    </div> <!--  Третья строка -->
+                    <div class="row">   <!-- Четвертая строка  -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/34.jpg" alt="">
+                                <h6><center>Боевые искусства/Крав Мага<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/35.jpg" alt="">
+                                <h6><center>Игры с мячом/Футбол<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/36.jpg" alt="">
+                                <h6><center>Творчество/Мармеладная глина<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/37.jpg" alt="">
+                                <h6><center>Творчество/Поделки своими руками<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/38.jpg" alt="">
+                                <h6><center>Творчество/Ювелирное дело<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/39.jpg" alt="">
+                                <h6><center>Интеллектуальные игры/Шахматы<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+
+                    </div> <!--  Четвертая строка -->
+                    <div class="row">   <!-- Пятая строка  -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/40.jpg" alt="">
+                                <h6><center>Животные/Дрессировка собак<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/41.jpg" alt="">
+                                <h6><center>Изучение языков/Анлийский<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/42.jpg" alt="">
+                                <h6><center>Подготовка к школе/Подготовка к первому классу<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/43.jpg" alt="">
+                                <h6><center>Науки и технологии/Компьюторы и естественные науки<br>Нетания, Эшколь Пис Эльдад 901</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/45.jpg" alt="">
+                                <h6><center>Клубы для пенсионеров<br>Тель-Авив, Намаль Яффо, 10</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+                        <div class="col-lg-2">
+                            <div class="section">
+                                <img src="source/img/49.jpg" alt="">
+                                <h6><center>Водные виды спорта/Парусный спорт<br>Нетания, матнас Нордау, Арие Левин, 3</center></h6>                         
+                            </div> <!-- section  -->
+                        </div> <!-- col-lg-2   -->
+
+                    </div> <!--  Пятая строка -->
+                </div> <!-- results  -->
+            </div> <!-- search-results  -->
+        </div>  <!-- Результаты поиска -->
+
+
+    </div> <!-- search-page  -->
+    <!-- Подвал -->
+    <footer>
+        <div class="container-fluid col-xs-12">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 footer-text text-center">
+                    <p>All Rights Reserved 2024</p>
+                </div>
+                <div class="col-md-4 col-xs-12 footer-text text-center">
+                    <p>Contact<br>Job<br>Our Team</p>
+                </div>
+                <div class="col-md-4 col-xs-12 media-links">
+                    <a href="https://www.telegram.org/" target=”_blank”>
+                        <img src="source/img/tg.png" alt="...">
+                    </a>
+                    <a href="https://www.youtube.com/" target=”_blank”>
+                        <img src="source/img/yt.png" alt="...">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- footer  -->
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
